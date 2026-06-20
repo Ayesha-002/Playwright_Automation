@@ -40,7 +40,55 @@ project
 ├── package.json
 └── README.md
 ```
+## Automation Framework Architecture
 
+```mermaid
+flowchart LR
+
+    A["📝 Test Scripts"]
+    B["📄 Login.spec.js"]
+    C["📄 Inventory.spec.js"]
+    D["📄 Cart.spec.js"]
+    E["📄 Checkout.spec.js"]
+
+    F["🏗️ Page Object Model"]
+    G["LoginPage.js"]
+    H["InventoryPage.js"]
+    I["CartPage.js"]
+    J["CheckoutPage.js"]
+
+    K["🎭 Playwright Engine"]
+
+    L["🌐 SauceDemo Application"]
+
+    M["📊 Test Results"]
+
+    N["📈 Allure Reports"]
+
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+
+    B --> F
+    C --> F
+    D --> F
+    E --> F
+
+    F --> G
+    F --> H
+    F --> I
+    F --> J
+
+    G --> K
+    H --> K
+    I --> K
+    J --> K
+
+    K --> L
+    L --> M
+    M --> N
+```
 ---
 
 ## Test Coverage
