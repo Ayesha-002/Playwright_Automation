@@ -1,0 +1,43 @@
+# Node Modules
+node_modules/
+
+# Playwright Reports
+playwright-report/
+test-results/
+
+# Allure Reports
+allure-results/
+allure-report/
+
+# Screenshots
+screenshots/
+
+# Videos
+videos/
+
+# Traces
+trace/
+
+# Logs
+logs/
+*.log
+
+# Environment Files
+.env
+.env.local
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# Coverage
+coverage/
+
+# Cache
+.cache/
